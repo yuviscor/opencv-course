@@ -72,6 +72,15 @@ labels = to_categorical(labels, len(characters))
 split_data = skm.train_test_split(featureSet, labels, test_size=.2)
 x_train, x_val, y_train, y_val = (np.array(item) for item in split_data)
 
+x_train = np.arrays(x_train)
+y_train = np.arrays(y_train)
+
+x_val = np.arrays(x_val)
+y_val = np.arrays(y_val)
+
+
+
+
 
 # Deleting variables to save memory
 del train
